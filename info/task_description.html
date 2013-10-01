@@ -1,4 +1,67 @@
 <p>
+    The robots are trying to colonize a new island. There are many rivers on
+    this island and it will be good idea for them to use water-ships. Some
+    territories don't have a river for transportation from one edge a field to
+    another. The robots can dig canal and convert the land to water if need be.
+    We must explore a field's map and count the minimum number of cells
+    necessary for a canal so that the robots can sail from north edge of map to
+    south edge. The map is in a 2D array, where 0 is water, 1 is land. Cells are
+    connected by their edges.
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="380px"/>
+</p>
+
+<p>
+    <strong>Input: </strong> A list of lists with 1 or 0.
+</p>
+
+<p>
+    <strong>Output: </strong> The minimum number of cells necessary for a canal. An integer.
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Example:</strong>
+    </p>
+<pre class="brush: python">checkio([[1, 1, 1, 1, 0, 1, 1],
+         [1, 1, 1, 1, 0, 0, 1],
+         [1, 1, 1, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 1, 1],
+         [1, 0, 0, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1]]) == 2
+checkio([[0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 0, 1, 0, 1, 1],
+         [1, 0, 0, 0, 0, 0, 1],
+         [0, 0, 0, 0, 0, 0, 0]]) == 3
+checkio([[1, 1, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 0, 1, 0, 1, 0],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [0, 0, 1, 1, 0, 0, 0, 0],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 0, 1, 1, 1, 1]]) == 2
+</pre>
+</div>
+
+
+<p>
     <i>( Describe task in general )</i>
 </p>
 
