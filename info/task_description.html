@@ -1,13 +1,12 @@
 <p>
-    The robots are trying to colonize a new island. There are many rivers on
-    this island and it would be good idea for them to use ships designed for water, rather than their spaceships. Some
-    of the
-    territories do not have a river for transportation from one edge of a field to
-    another. The robots can dig a canal and convert the land to water if need be.
-    We must explore a field map and count the minimum number of cells
-    necessary for a canal that would allow the robots to sail from northern edge of the map to
-    southern edge. The map is in a 2D array, where 0 is water, 1 is land. Cells are
-    connected by their edges.
+    The robots are trying to colonize a new island.
+    There are many rivers on this island and it would be good idea for them to use ships designed for water,
+    rather than their spaceships.
+    Some of the territories do not have a river for transportation from one edge of a field to another.
+    The robots can dig a canal and convert the land to water if need be.
+    We must explore a field map and count the minimum number of cells necessary for a canal
+    that would allow the robots to sail from northern edge of the map to southern edge.
+    The map is in a 2D array, where 0 is water, 1 is land. Cells are connected by their edges.
 </p>
 
 <p style="text-align: center;">
@@ -24,11 +23,11 @@
 </p>
 
 <p>
-    <strong>Input: </strong> A list of lists with 1 or 0.
+    <strong>Input: </strong> A map as a list of lists with 1 or 0.
 </p>
 
 <p>
-    <strong>Output: </strong> The minimum number of cells necessary for a canal. An integer.
+    <strong>Output: </strong> The minimum number of cells necessary for a canal as an integer.
 </p>
 
 <div class="for_info_only">
@@ -64,7 +63,15 @@ checkio([[1, 1, 1, 1, 1, 0, 1, 1],
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Optimization software.
+    This concept is a mixin of graph-search and optimization problems.
+    it can be useful for the navigation software and for network optimization.
+</p>
+
+
+<p>
+    <strong>Precondition:</strong> 0 < |map| &lt; 10<br>
+    The map is rectangular.<br>
+
 </p>
 
 <p class="for_info_only">
