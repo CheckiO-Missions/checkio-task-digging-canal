@@ -69,9 +69,8 @@ checkio([[1, 1, 1, 1, 1, 0, 1, 1],
 
 
 <p>
-    <strong>Precondition:</strong> 0 < |map| &lt; 10<br>
-    The map is rectangular.<br>
-
+    <strong>Precondition:</strong> 0 &lt; len(land_map) &lt; 10<br>
+    all(len(land_map) == len(row) for row in land_map)<br>
 </p>
 
 <p class="for_info_only">
