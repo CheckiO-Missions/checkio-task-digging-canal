@@ -1,0 +1,83 @@
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p>
+    Die Roboter versuchen, eine neue Insel zu besiedeln.
+    Auf dieser Insel gibt es viele Flüsse und es wäre eine gute Idee, wenn sie Schiffe benutzen würden, die für Wasser ausgelegt sind,
+    und nicht ihre Raumschiffe.
+    Einige der Gebiete haben keinen Fluss, um von einem Rand eines Feldes zum anderen zu gelangen.
+    Die Roboter können einen Kanal graben und das Land in Wasser umwandeln, wenn es nötig ist.
+    Wir müssen eine Feldkarte erkunden und die Mindestanzahl der Zellen zählen, die für einen Kanal erforderlich sind
+    der es den Robotern ermöglichen würde, vom Nordrand der Karte zum Südrand zu fahren.
+    Die Karte besteht aus einem 2D-Array, wobei 0 Wasser und 1 Land bedeutet. Die Zellen sind durch ihre Kanten miteinander verbunden.
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="380px"/>
+</p>
+
+<p>
+   <strong>Eingabe: </strong> Eine Karte als eine Liste von Listen mit 1 oder 0.
+</p>
+
+<p>
+   <strong>Ausgabe: </strong> Die minimale Anzahl von Zellen, die für einen Kanal erforderlich sind, als ganze Zahl.
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Beispiel:</strong>
+    </p>
+<pre class="brush: python">checkio([[1, 1, 1, 1, 0, 1, 1],
+         [1, 1, 1, 1, 0, 0, 1],
+         [1, 1, 1, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 1, 1],
+         [1, 0, 0, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1]]) == 2
+checkio([[0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 0, 1, 0, 1, 1],
+         [1, 0, 0, 0, 0, 0, 1],
+         [0, 0, 0, 0, 0, 0, 0]]) == 3
+checkio([[1, 1, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 0, 1, 0, 1, 0],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [0, 0, 1, 1, 0, 0, 0, 0],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 0, 1, 1, 1, 1]]) == 2
+</pre>
+</div>
+
+
+<p class="for_info_only">
+   <strong>Wie es verwendet wird: </strong>
+    Dieses Konzept ist eine Mischung aus Graphen-Suche und Optimierungsproblemen.
+    Es kann in Navigationssoftware und bei der Netzwerkoptimierung nützlich sein.
+</p>
+
+
+<p>
+   <strong>Vorbedingung:</strong> 0 &lt; len(land_map) &lt; 10<br>
+    all(0 &lt; len(row) &lt; 10 for row in land_map)<br>
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/vNl0LGwKy4A" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
