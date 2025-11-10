@@ -1,0 +1,83 @@
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p>
+    机器人正试图殖民一个新的岛屿。
+    岛上有许多河流，他们最好使用专为水上设计的飞船，而不是他们的飞船、
+    而不是他们的飞船。
+    有些地区没有河流，无法从田野的一端运输到另一端。
+    如果有必要，机器人可以挖掘运河，将陆地转化为水域。
+    我们必须探索田野地图，并计算出开凿运河所需的最少单元数。
+    让机器人从地图的北边航行到南边。
+    地图是一个二维数组，其中 0 代表水，1 代表陆地。单元格通过边缘连接。
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="digging_canal"
+         src="{{ MEDIA }}digging_canal.png"
+         alt="digging_canal"
+         width="380px"/>
+</p>
+
+<p>
+   <strong>输入 </strong> 由 1 或 0 组成的列表形式的地图。
+</p>
+
+<p>
+   <strong>输出： </strong> 运河所需的最小单元格数（整数）。
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>举例说明</strong>
+    </p>
+<pre class="brush: python">checkio([[1, 1, 1, 1, 0, 1, 1],
+         [1, 1, 1, 1, 0, 0, 1],
+         [1, 1, 1, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 0, 1],
+         [1, 1, 0, 1, 1, 1, 1],
+         [1, 0, 0, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1]]) == 2
+checkio([[0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 1, 1],
+         [1, 1, 0, 1, 0, 1, 1],
+         [1, 0, 0, 0, 0, 0, 1],
+         [0, 0, 0, 0, 0, 0, 0]]) == 3
+checkio([[1, 1, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [1, 0, 1, 0, 1, 0, 1, 0],
+         [1, 0, 1, 1, 1, 0, 1, 1],
+         [0, 0, 1, 1, 0, 0, 0, 0],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 0, 1, 1, 1, 1, 1, 1],
+         [1, 1, 1, 0, 1, 1, 1, 1]]) == 2
+</pre>
+</div>
+
+
+<p class="for_info_only">
+   <strong>如何使用： </strong>
+    这一概念是图搜索和优化问题的混合体。
+    它可用于导航软件和网络优化。
+</p>
+
+
+<p>
+   <strong>前提条件</strong>0 &lt; len(land_map) &lt; 10<br>
+    all(0 &lt; len(row) &lt; 10 for row in land_map)<br>
+</p>
+
+<!--
+<p class="for_info_only">
+    <strong>How to use TryIt: </strong><br>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/vNl0LGwKy4A" frameborder="0" allowfullscreen></iframe>
+</p>
+-->
